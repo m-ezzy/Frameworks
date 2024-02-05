@@ -1,0 +1,22 @@
+		/*
+		function _arrayBufferToBase64( buffer ) {
+				var binary = '';
+				var bytes = new Uint8Array( buffer );
+				var len = bytes.byteLength;
+				for (var i = 0; i < len; i++) {
+					 binary += String.fromCharCode( bytes[ i ] );
+				}
+				return binary;
+		}
+
+		let blob = new Blob(data.json.profile_picture.data, {'type': 'image/jpg'})
+		//let f = blob.toString()
+		console.log(blob)
+
+		// const base64String = btoa(String.fromCharCode(...new Uint8Array(me.profile_picture.value)));
+
+		let rrr = me.profile_picture.data.toString('base64')
+		console.log(rrr)
+		account.element.getElementsByTagName('img')[0].src = 'data:image/jpg;base64, ' + me.p*/
+		//let a = new ArrayBuffer(me.profile_picture.value)
+		//let b = a.Base64()

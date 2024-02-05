@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ magazine.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ magazine.title }}</h1>
+    <p>Published Date: {{ magazine.published_date }}</p>
+    <p>Is Available: {{ magazine.is_available }}</p>
+    <p>Genre: {{ magazine.genre }}</p>
+    <p>Publisher: {{ magazine.publisher.name }}</p>
+    <a href="{% url 'magazine_edit' magazine.id %}">Edit</a>
+    <a href="{% url 'magazine_delete' magazine.id %}">Delete</a>
+    <a href="{% url 'magazine_list' %}">Back to Magazine List</a>
+{% endblock %}

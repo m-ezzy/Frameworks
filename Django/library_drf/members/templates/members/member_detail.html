@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ member.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ member.name }}</h1>
+    <p>Email: {{ member.email }}</p>
+    <p>Is Active: {{ member.is_active }}</p>
+    <a href="{% url 'member_edit' member.id %}">Edit</a>
+    <a href="{% url 'member_delete' member.id %}">Delete</a>
+    <a href="{% url 'member_list' %}">Back to Member List</a>
+{% endblock %}

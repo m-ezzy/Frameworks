@@ -1,0 +1,7 @@
+build
+Bin
+node_modules
+site-packages
+Scripts
+__pycache__
+obj

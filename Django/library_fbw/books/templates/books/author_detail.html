@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ author.name }}{% endblock %}
+
+{% block content %}
+    <h1>Author Name: {{ author.name }}</h1>
+    <p>Birth Date: {{ author.birth_date }}</p>
+    <p>Country: {{ author.country }}</p>
+    <p>is alive: 
+        {% if author.is_alive == True %}
+            <input type="checkbox" name="" id="" checked disabled>
+        {% else %}
+            <input type="checkbox" name="" id="" disabled>
+        {% endif %}
+    </p>
+
+    <a href="{% url 'author_edit' author.id %}">Edit</a>
+    <a href="{% url 'author_delete' author.id %}">Delete</a>
+    <a href="{% url 'author_list' %}">Back to Author List</a>
+{% endblock %}

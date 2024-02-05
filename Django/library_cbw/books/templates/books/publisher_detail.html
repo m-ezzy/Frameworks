@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ publisher.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ publisher.name }}</h1>
+    <p>Established Date: {{ publisher.established_date }}</p>
+    <p>Location: {{ publisher.location }}</p>
+    <a href="{% url 'publisher_edit' publisher.id %}">Edit</a>
+    <a href="{% url 'publisher_delete' publisher.id %}">Delete</a>
+    <a href="{% url 'publisher_list' %}">Back to Publisher List</a>
+{% endblock %}

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-size: 5vh;
+    width: 1fr;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+nav {
+    /*width: 100%;
+    height: 10%;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*column-gap: 10px;*/
+    background-color: rgb(231, 255, 124);
+    flex-grow: 1;
+}
+nav > div , nav > a {
+    margin-right: 10px;
+}
+body > div {
+    /*width: 100%;
+    height: 90%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: sienna;
+    flex-grow: 20;
+}

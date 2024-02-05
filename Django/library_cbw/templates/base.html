@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Library{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'author_list' %}">Authors</a></li>
+            <li><a href="{% url 'book_list' %}">Books</a></li>
+            <li><a href="{% url 'publisher_list' %}">Publishers</a></li>
+            <li><a href="{% url 'magazine_list' %}">Megazines</a></li>
+            <li><a href="{% url 'member_list' %}">Members</a></li>
+        </ul>
+        {% if user.is_authenticated %}
+            <p>Logged in as: {{ user.username }} | <a href="{% url 'user_logout' %}">Logout</a></p>
+        {% else %}
+            <p><a href="{% url 'user_login' %}">Login</a></p>
+        {% endif %}
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

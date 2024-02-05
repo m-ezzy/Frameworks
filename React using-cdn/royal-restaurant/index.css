@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-size: 2rem;
+}
+.nav-bar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: skyblue;
+}
+.nav-bar div {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.nav-bar div:hover {
+    background-color: lightgray;
+}
+.content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+img {
+    width: 500px;
+    margin-top: 50px;
+}

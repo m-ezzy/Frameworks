@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.root * {
+	display: grid;
+	padding: 5px;
+	row-gap: 5px;
+	column-gap: 5px;
+	border: 1px solid black;
+}
+.app, button, input {
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.app {
+	height: 100vh;
+}
+.app * {
+}
+
+.app > nav {
+	display: flex;
+	padding: 10px;
+	column-gap: 10px;
+	background-color: rgb(151, 140, 255);
+}
+nav > a {
+	color: unset;
+	/* text-decoration: none; */
+}
+nav > a:visited {
+	color: unset;
+}
+nav :nth-child(4) {
+	margin-left: auto;
+}
+
+.page {
+	overflow-y: auto;
+	background-color: rgb(242, 255, 169);
+}
+
+.products-page {
+}
+.categories {
+	display: flex;
+}
+.categories > div {
+}
+.products {
+	/* display: grid; */
+	/* grid-auto-rows: max-content; */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow-y: auto;
+}
+.products > div {
+}
+.products > a > img {
+	width: 100%;
+	min-width: 300px;
+	height: 300px;
+}
+.available {
+	background-color: rgb(0, 250, 0);
+}
+.out-of-stock {
+	background-color: rgb(250, 0, 0);
+}

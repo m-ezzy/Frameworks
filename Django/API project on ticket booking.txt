@@ -1,0 +1,24 @@
+
+# give an outline for ticket booking system api in django
+# 1. create a project
+# 2. create an app
+# 3. create a model
+# 4. create a serializer
+# 5. create a view
+# 6. create a url
+# 7. create a test case
+# 8. create a migration
+# 9. create a super user
+# 10. run the server
+# 11. test the api
+# 12. create a git repo
+# 13. push the code to git repo
+# 14. create a docker file
+# 15. create a docker compose file
+# 16. run the docker compose file
+# 17. test the api
+# 18. push the code to git repo
+# 19. create a jenkins file
+# 20. create a jenkins job
+# 21. run the jenkins job
+# 22. test the api

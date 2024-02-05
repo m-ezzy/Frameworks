@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ author.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ author.name }}</h1>
+    <p>Birth Date: {{ author.birth_date }}</p>
+    <p>Country: {{ author.country }}</p>
+    <a href="{% url 'author_edit' author.id %}">Edit</a>
+    <!-- <a href="{% url 'author_delete' author.id %}">Delete</a> -->
+    <form method="post" action="{% url 'author_delete' author.id %}">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete">
+    </form>
+    <a href="{% url 'author_list' %}">Back to Author List</a>
+{% endblock %}

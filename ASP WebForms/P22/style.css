@@ -1,0 +1,16 @@
+* {
+	color: "#ffff00";
+}
+div
+{
+    color: Lime;
+}
+.container
+{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    background-color: Aqua;
+}
